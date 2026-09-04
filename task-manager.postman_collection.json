@@ -1,0 +1,205 @@
+{
+  "info": {
+    "_postman_id": "8a1959b5-46c3-4a5c-a2e0-f1269054f429",
+    "name": "task-manager",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "37939376"
+  },
+  "item": [
+    {
+      "name": "task-list",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/tasks",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "tasks"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "task-add",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "title",
+              "value": "mern",
+              "type": "text",
+              "uuid": "f21b790d-a398-49ce-82aa-60ca2d520ee2"
+            },
+            {
+              "key": "description",
+              "value": "mern crud",
+              "type": "text",
+              "uuid": "7dcfd1c8-16d1-45bb-943e-095a1b561b72"
+            },
+            {
+              "key": "is_completed",
+              "value": "1",
+              "type": "text",
+              "uuid": "ab130ba8-7735-4673-af7e-aaab3fedeff9"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/tasks",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "tasks"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "task-update",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "title",
+            "value": "php",
+            "type": "text"
+          },
+          {
+            "key": "description",
+            "value": "crud php laravel task",
+            "type": "text"
+          },
+          {
+            "key": "is_completed",
+            "value": "0",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "title",
+              "value": "php",
+              "type": "text",
+              "uuid": "fb06e86b-1ddc-49fa-b5ae-005ef7f20855"
+            },
+            {
+              "key": "description",
+              "value": "crud",
+              "type": "text",
+              "uuid": "ce7e6d8f-4e75-4c0c-af5b-5c66b3b3fa64"
+            },
+            {
+              "key": "is_completed",
+              "value": "1",
+              "type": "text",
+              "uuid": "9307ee92-33d5-4ab0-8aa1-9e7af6343cb8"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/tasks/1",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "tasks",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "task-delete",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "title",
+            "value": "php",
+            "type": "text"
+          },
+          {
+            "key": "description",
+            "value": "crud php laravel task",
+            "type": "text"
+          },
+          {
+            "key": "is_completed",
+            "value": "0",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "title",
+              "value": "php",
+              "type": "text",
+              "uuid": "fb06e86b-1ddc-49fa-b5ae-005ef7f20855"
+            },
+            {
+              "key": "description",
+              "value": "crud",
+              "type": "text",
+              "uuid": "ce7e6d8f-4e75-4c0c-af5b-5c66b3b3fa64"
+            },
+            {
+              "key": "is_completed",
+              "value": "1",
+              "type": "text",
+              "uuid": "9307ee92-33d5-4ab0-8aa1-9e7af6343cb8"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/tasks/2",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "tasks",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
