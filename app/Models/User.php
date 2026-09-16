@@ -20,7 +20,10 @@ class User extends Authenticatable
         'name',
         'email',
         'mobile',
+        'role',
+        'password',
     ];
+
 
     /**
      * Get the attributes that should be cast.
@@ -33,5 +36,9 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
            
         ];
+    }
+    public function isAdmin(): bool
+    {
+        return $this->role === 'admin';
     }
 }

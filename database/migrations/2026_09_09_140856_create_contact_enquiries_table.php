@@ -11,11 +11,21 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('tasks', function (Blueprint $table) {
+        Schema::create('contact_enquiries', function (Blueprint $table) {
             $table->id();
-             $table->string('title');
-            $table->text('description')->nullable();
-            $table->boolean('is_completed')->default(false);
+            $table->string('name');
+
+        $table->string('mobile_number', 20);
+
+        $table->string('location');
+
+        $table->string('email')
+            ->nullable();
+
+        $table->string('product_enquiry');
+
+        $table->text('message')
+            ->nullable();
             $table->timestamps();
         });
     }
@@ -25,6 +35,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('tasks');
+        Schema::dropIfExists('contact_enquiries');
     }
 };
